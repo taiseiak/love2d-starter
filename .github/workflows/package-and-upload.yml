@@ -16,15 +16,12 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: "20"
 
       - name: Set up Butler
         run: |
           curl -L -o /usr/local/bin/butler https://broth.itch.ovh/butler/linux-amd64/head/butler
           chmod +x /usr/local/bin/butler
-
-      - name: Install dependencies
-        run: npm install
 
       - name: Run package and upload script
         env:

@@ -7,6 +7,8 @@ This is a starter template mostly made for myself. It includes:
 
 This has small enough code that it can be used for gamejams.
 
+Base d on the great work at [simplifylabs/love-packager: CLI to package your LÖVE projects](https://github.com/simplifylabs/love-packager).
+
 ## Requirements
 
 Before running any scripts, ensure that the following tools and dependencies are installed:
@@ -87,3 +89,8 @@ The provided GitHub Actions workflow is correct, except for a minor adjustment i
 ```
 
 This workflow should be sufficient to run the `package-and-upload.sh` script on GitHub Actions whenever changes are pushed to the `main` branch.
+
+
+## Credits
+
+- [simplifylabs/love-packager: CLI to package your LÖVE projects](https://github.com/simplifylabs/love-packager)
