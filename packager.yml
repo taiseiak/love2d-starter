@@ -1,0 +1,9 @@
+name: love2d-starter
+version: 0.0.2
+assets:
+  - "game/**/*"
+targets:
+  - love
+  - web
+  - win-64
+  - mac

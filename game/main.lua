@@ -10,12 +10,12 @@ function love.load()
     math.randomseed(os.time())
 
     -- [libraries] --
-    Push:setupScreen(G.gameWidth, G.gameHeight, 800, 450,
+    Push:setupScreen(G.gameWidth, G.gameHeight, 640, 360,
         {
             fullscreen = false,
             highdpi = true,
             pixelperfect = false,
-            resizable = false
+            resizable = true
         })
 
     -- Though global, slog-text looks for this exact variable.
@@ -32,6 +32,10 @@ function love.load()
     G.scenery:load()
 
     startTime = love.timer.getTime()
+end
+
+function love.resize(w, h)
+    Push:resize(w, h)
 end
 
 function love.update(dt)
