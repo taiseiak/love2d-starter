@@ -72,25 +72,6 @@ This script uncompresses the Web build (`Web.zip`) created by `package.sh` and s
 **Requirements:**
 - Ensure Python 3 is installed to run the local HTTP server.
 
-### GitHub Actions Workflow Review
-
-The provided GitHub Actions workflow is correct, except for a minor adjustment in the script execution step. The correct script name should be used in the `chmod +x` and script execution command:
-
-- Replace `your-script.sh` with `package-and-upload.sh` in the workflow:
-
-```yaml
-- name: Run package and upload script
-  env:
-    ITCH_IO_API_KEY: ${{ secrets.ITCH_IO_API_KEY }}
-    ITCH_IO_USERNAME: ${{ secrets.ITCH_IO_USERNAME }}
-  run: |
-    chmod +x package-and-upload.sh
-    ./package-and-upload.sh --increment-version
-```
-
-This workflow should be sufficient to run the `package-and-upload.sh` script on GitHub Actions whenever changes are pushed to the `main` branch.
-
-
 ## Credits
 
 - [simplifylabs/love-packager: CLI to package your LÖVE projects](https://github.com/simplifylabs/love-packager)
