@@ -7,7 +7,7 @@ This is a starter template mostly made for myself. It includes:
 
 This has small enough code that it can be used for gamejams.
 
-Base d on the great work at [simplifylabs/love-packager: CLI to package your LÖVE projects](https://github.com/simplifylabs/love-packager).
+Based on the great work at [simplifylabs/love-packager: CLI to package your LÖVE projects](https://github.com/simplifylabs/love-packager).
 
 ## Requirements
 

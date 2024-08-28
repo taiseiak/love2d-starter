@@ -20,7 +20,6 @@ for file in $VERSION_DIR/*.zip; do
   elif [[ "$file" == *"Win64.zip" ]]; then
     platform="win"
   fi
-  echo "butler push $file $ITCH_IO_USERNAME/$GAME_NAME:$platform"
   butler push $file $ITCH_IO_USERNAME/$GAME_NAME:$platform
 done
 
